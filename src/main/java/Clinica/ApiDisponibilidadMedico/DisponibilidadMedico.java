@@ -23,14 +23,14 @@ public class DisponibilidadMedico {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String codMedico;
-    private LocalDate fec;
-    private LocalTime horIni;
-    private LocalTime horFin;
+    private String fec;
+    private String horIni;
+    private String horFin;
 
     public DisponibilidadMedico() {
     }
 
-    public DisponibilidadMedico(Long id, String codMedico, LocalDate fec, LocalTime horIni, LocalTime horFin) {
+    public DisponibilidadMedico(Long id, String codMedico, String fec, String horIni, String horFin) {
         this.id = id;
         this.codMedico = codMedico;
         this.fec = fec;
@@ -54,29 +54,28 @@ public class DisponibilidadMedico {
         this.codMedico = codMedico;
     }
 
-    public LocalDate getFec() {
+    public String getFec() {
         return fec;
     }
 
-    public void setFec(LocalDate fec) {
+    public void setFec(String fec) {
         this.fec = fec;
     }
 
-    public LocalTime getHorIni() {
+    public String getHorIni() {
         return horIni;
     }
 
-    public void setHorIni(LocalTime horIni) {
+    public void setHorIni(String horIni) {
         this.horIni = horIni;
     }
 
-    public LocalTime getHorFin() {
+    public String getHorFin() {
         return horFin;
     }
 
-    public void setHorFin(LocalTime horFin) {
+    public void setHorFin(String horFin) {
         this.horFin = horFin;
     }
-    
-    
+
 }
